@@ -42,7 +42,7 @@ except Exception as e:
 # cache_resource로 한번 실행한 결과 캐싱해두기
 @st.cache_resource
 def load_and_split_pdf(file_path):
-    # '별자리리.pdf' 파일명 사용 (사용자가 제공한 경로)
+    # '별자리.pdf' 파일명 사용 (사용자가 제공한 경로)
     loader = PyPDFLoader(file_path)
     return loader.load_and_split()
 
