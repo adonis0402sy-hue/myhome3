@@ -90,7 +90,7 @@ def get_vectorstore(_docs):
 # PDF 문서 로드-벡터 DB 저장-검색기-히스토리 모두 합친 Chain 구축
 @st.cache_resource
 def initialize_components(selected_model):
-    file_path = "별자리리.pdf" # 사용자가 지정한 파일명 유지
+    file_path = "별자리.pdf" # 사용자가 지정한 파일명 유지
     try:
         pages = load_and_split_pdf(file_path)
     except Exception as e:
